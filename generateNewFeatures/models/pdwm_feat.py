@@ -13,42 +13,27 @@ from scipy import stats
 import warnings
 warnings.filterwarnings("ignore")
 
-
-ruler = np.load('pwdm100ruler.npy',allow_pickle=True)
-def gen_coord_feat(file):
-dictmatrix ={}
-
 def upper_tri_indexing(A):
     m = A.shape[0]
     r,c = np.triu_indices(m,1)
     return A[r,c]
 
-for file in onlyfiles:
-    tmp += 1
-    file = f"{mypath}/{file}"
-    mpid = file.split("/")[-1].split(".")[0]
+ruler = np.load('./pdwm100_feat/pwdm100ruler.npy',allow_pickle=True)
 
+def gen_coord_feat(files):
+    dictmatrix ={}
+    for file in files:
+        mp_id = file.split('.')[0]
+        structure = Structure.from_file(file)
+        pairmatrix = structure.distance_matrix
 
-    structure = Structure.from_file(file)
-    pairmatrix = structure.distance_matrix
+        feat = np.zeros((101,), dtype=int)
+        pwdm = upper_tri_indexing(pairmatrix).tolist()
 
+        for site in pwdm:
+            index = math.floor(stats.percentileofscore(ruler, site))
 
-    feat = np.zeros((101,), dtype=int)
-    pwdm = upper_tri_indexing(pairmatrix).tolist()
-    #print(len(pwdm))
-    for site in pwdm:
-        index = math.floor(stats.percentileofscore(ruler, site))
-        #print(index)
-        feat[index] = feat[index] +1
+            feat[index] = feat[index] +1
+        dictmatrix[mp_id] = feat
+    return dictmatrix
     dictmatrix[mpid] = feat
-    if tmp %100==0:
-        print(tmp)
-        
-    if tmp %10000==0:
-        #print("save_temp")
-        
-        np.save('pwdm100_temp.npy', dictmatrix)
- 
-  
-np.save('pwdm100.npy', dictmatrix)
-print( "done" )
