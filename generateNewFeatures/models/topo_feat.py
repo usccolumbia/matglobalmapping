@@ -14,7 +14,7 @@ def cif2vaspUsingASE(input_dir):
     It will write out the coordinates in cartesian coordinates.
     """
     onlyfiles = [join(input_dir, f) for f in listdir(input_dir) if isfile(join(input_dir, f))]
-    outpath = '/'.join(input_dir.split('/')[:-2])+'/poscar/'
+    outpath = '/'.join(input_dir.split('/')[:-1])+'/poscar/'
     if not os.path.exists(outpath):
         os.makedirs(outpath)
     materialdf = pd.DataFrame()
@@ -22,14 +22,14 @@ def cif2vaspUsingASE(input_dir):
     
         atoms = io.read(file)
         filename =file.split('/')[-1].split('.')[0]
-        print(filename)
+        #print(filename)
         new_row = {'mp_id':filename, 'traget':0}
         materialdf = materialdf.append(new_row, ignore_index=True)
 
         
         atoms.write(outpath+f'{filename}', format = 'vasp')
     materialdf.to_csv(outpath+"targets.csv",index=False)
-    shutil.copy('./topo_feat_net/element_properties.csv', outpath)   
+    shutil.copy('./models/utils/element_properties.csv', outpath)   
 
     
     return outpath
@@ -40,8 +40,8 @@ def get_topo_feat(inputdir):
     #print("+===============================================+")
     #print(poscardir)
     #poscardir = "../input_data/poscar/"
-    print("calcuate feature")
-    os.system(f"python ./topo_feat_net/topo_feat_gen.py --inputdir {poscardir}")
+    print("calcuate topo eature")
+    os.system(f"python ./models/topo/topo_feat_gen.py --inputdir {poscardir}")
     print("done")
     #read feat
     featuredir = poscardir +'feature_topo_compo/'

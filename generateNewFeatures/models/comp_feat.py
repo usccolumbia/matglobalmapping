@@ -9,7 +9,7 @@ from pymatgen.core.structure import Structure
 
 def get_onehot_matrix(onlyfiles):
     l=32
-    onehot = np.load('MP_periodic_table.npy', allow_pickle=True).item()
+    onehot = np.load('./models/utils/MP_periodic_table.npy', allow_pickle=True).item()
     #print(onehot.item())
     onehot_feat={}
     for file in onlyfiles:

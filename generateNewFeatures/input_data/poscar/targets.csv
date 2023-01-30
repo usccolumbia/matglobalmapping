@@ -1,22 +1,22 @@
-mp_id,formula
-mp-190, ReO3
-mp-189, SiRu
-mp-195, HoPt3
-mp-201, Yb5Sb3
-mp-172, Nd5Ge4
-mp-170, HoCd
-mp-191, YRh
-mp-171, VNi3
-mp-179, YZn
-mp-193, Zr2Cu
-mp-186, Na4Si23
-mp-196, Al5Co2
-mp-174, Tl5Te3
-mp-173, MnAl6
-mp-183, CeCd
-mp-200, LaP7
-mp-182, SrGa2
-mp-188, AlPt3
-mp-181, KGa3
-mp-178, ThAl
-mp-177, USb
+mp_id,traget
+mp-190,0
+mp-189,0
+mp-195,0
+mp-201,0
+mp-172,0
+mp-170,0
+mp-191,0
+mp-171,0
+mp-179,0
+mp-193,0
+mp-186,0
+mp-196,0
+mp-174,0
+mp-173,0
+mp-183,0
+mp-200,0
+mp-182,0
+mp-188,0
+mp-181,0
+mp-178,0
+mp-177,0

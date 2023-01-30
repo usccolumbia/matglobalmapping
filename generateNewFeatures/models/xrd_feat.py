@@ -13,7 +13,7 @@ from scipy.stats import gaussian_kde
 from pymatgen.analysis.diffraction.xrd import XRDCalculator
 
 #input folder
-mypath = "../input_data/cif/"
+mypath = "./input_data/cif/"
 onlyfiles = [join(mypath, f) for f in listdir(mypath) if isfile(join(mypath, f))]
 
 
