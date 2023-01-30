@@ -7,7 +7,7 @@ from pymatgen.core.composition import Composition
 from pymatgen.core.structure import Structure
 
 
-def get_onehot_matrix(onlyfiles):
+def get_comp_onehot(onlyfiles):
     l=32
     onehot = np.load('./models/utils/MP_periodic_table.npy', allow_pickle=True).item()
     #print(onehot.item())
