@@ -20,8 +20,11 @@ cartcord,factcord = gen_coord_feat(onlyfiles)
 if not os.path.exists("./output"):
         os.makedirs("./output")
 np.save('./output/input_Ccod_feat.npy', cartcord)
+
 np.save('./output/input_Fcod_feat.npy', factcord)
+
 np.save('./output/input_comp_feat.npy', get_comp_onehot(onlyfiles))
+
 np.save('./output/input_pwdm_feat.npy',gen_pwdm_feat(onlyfiles))
 np.save('./output/input_xrd_feat.npy',get_xrd_feat(onlyfiles))
 np.save('./output/input_topo_feat.npy',get_topo_feat(inputdir))
