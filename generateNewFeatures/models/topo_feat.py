@@ -37,9 +37,6 @@ def cif2vaspUsingASE(input_dir):
 
 def get_topo_feat(inputdir):
     poscardir = cif2vaspUsingASE(inputdir)
-    #print("+===============================================+")
-    #print(poscardir)
-    #poscardir = "../input_data/poscar/"
     print("calcuate topo eature")
     os.system(f"python ./models/topo/topo_feat_gen.py --inputdir {poscardir}")
     print("done")
