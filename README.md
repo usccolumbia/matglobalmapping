@@ -17,21 +17,21 @@ Cite our work: <br>
 2. reproduce the mapping graph
 Due to the size of the generated feature the dataset avaliable in this respository is the result from T-SNE. It only contains the xy coordniates for each map.
 
-    -2.0 For global density and property analysis, The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper (figure 2,4,5,6)
+    - 2.0 For global density and property analysis, The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper (figure 2,4,5,6)
 
     For target group analysis WRT. global distribution, there are 2 senerios. 
 
-    -2.1 your target group of materials is from MP dataset with known their MP ids.
+    - 2.1 your target group of materials is from MP dataset with known their MP ids.
             The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper(figure 3)
 
 
-    -2.2 you have a group of materials not from MP dataset with their structure file as .cif.
+    - 2.2 you have a group of materials not from MP dataset with their structure file as .cif.
             This requires you to generate the feature using section 1 of our code.
             Then concatenate the generated features with the whole MP feature to run tsne analysis.
 
     For target group analysis WRT. some local distribution:
 
-    -2.3 make sure your target and backgound materials are feed into the tsne toghether.
+    - 2.3 make sure your target and backgound materials are feed into the tsne toghether.
         make sure the domain of the background materials is larger than the target materials to get a good map.
 
         E.g. {ABC3 materials}<{ternary materials}
