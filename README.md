@@ -1,8 +1,7 @@
 # matglobalmapping
 ### Global mapping of inorganic materials
 
-By Qinyang Li at Machine Learning and Evolution Laboratory
-by <a href="http://mleg.cse.sc.edu" target="_blank">Machine Learning and Evolution Laboratory</a>, University of South Carolina.
+By Qinyang Li at <a href="http://mleg.cse.sc.edu" target="_blank">Machine Learning and Evolution Laboratory</a>, University of South Carolina.
 
 Cite our work: <br>
 
@@ -19,10 +18,10 @@ Due to the size of the generated feature the dataset avaliable in this resposito
 
     - 2.0 For global density and property analysis, The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper (figure 2,4,5,6)
 
-    For target group analysis WRT. global distribution, there are 2 senerios. 
+    For target group analysis WRT. global distribution, there are 2 senerios. (figure 3)
 
     - 2.1 your target group of materials is from MP dataset with known their MP ids.
-            The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper(figure 3)
+            The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper
 
 
     - 2.2 you have a group of materials not from MP dataset with their structure file as .cif.
