@@ -5,7 +5,10 @@ In this directory, there is some example input file including the materials with
 
 with the environment properly installed and input data inplace,
 the script can be executed by 
-'''python run.py'''
+
+```
+python run.py
+```
 
 the output of each feature generating function is a dictnary. The keys are filenames or mpids (depend on your input), the values are generated feature vectors.
 all generated feature is stored in the output folder in the format of .npy
