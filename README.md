@@ -18,6 +18,7 @@ Due to the size of the generated feature the dataset avaliable in this resposito
 
     - [global density](https://github.com/usccolumbia/matglobalmapping/blob/main/graphsgenerate/allMP_global_density.ipynb) 
     - [global property](https://github.com/usccolumbia/matglobalmapping/blob/main/graphsgenerate/allMP_global_property.ipynb) 
+    
     For global density and property analysis, The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper (figure 2,4,5,6)
 
     For target group analysis WRT. global distribution, there are 2 senerios. (figure 3)
@@ -41,7 +42,7 @@ Due to the size of the generated feature the dataset avaliable in this resposito
 - Dataset
 
 the whole MP feature of all 7 different descriptors is avaliable at 
-https://figshare.com/account/articles/21980081 
+[global feature dataset](https://figshare.com/account/articles/21980081)
 
 
 
