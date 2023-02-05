@@ -13,12 +13,10 @@ Cite our work: <br>
     - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
 
 2. Reproduce the mapping graph 
+For global density and property analysis, The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper (figure 2,4,5,6).Due to the size of the generated feature the dataset avaliable in this respository is the result from T-SNE. It only contains the xy coordniates for each map.
 
-For global density and property analysis, The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper (figure 2,4,5,6)
-Due to the size of the generated feature the dataset avaliable in this respository is the result from T-SNE. It only contains the xy coordniates for each map.
-
-   - [global density](https://github.com/usccolumbia/matglobalmapping/blob/main/graphsgenerate/allMP_global_density.ipynb) 
-   - [global property](https://github.com/usccolumbia/matglobalmapping/blob/main/graphsgenerate/allMP_global_property.ipynb) 
+    - [global density](https://github.com/usccolumbia/matglobalmapping/blob/main/graphsgenerate/allMP_global_density.ipynb) 
+    - [global property](https://github.com/usccolumbia/matglobalmapping/blob/main/graphsgenerate/allMP_global_property.ipynb) 
       
 
 For target group analysis WRT. global distribution, there are 2 senerios. (figure 3)
