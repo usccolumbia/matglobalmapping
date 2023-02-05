@@ -7,7 +7,7 @@ Cite our work: <br>
 
 
 ### Introduction
-## Usage: There are 2 section of our code. You can create new feature from all the descriptors or reproduce our mapping results shown in paper.
+#### Usage: There are 2 section of our code. You can create new feature from all the descriptors or reproduce our mapping results shown in paper.
 1. Generate all the descriptors feature vector for given group of materials structure infomation in format of .cif
 
     - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
@@ -26,19 +26,16 @@ For target group analysis WRT. global distribution, there are 2 senerios. (figur
 
 - you have a group of materials not from MP dataset with their structure file as .cif. This requires you to generate the feature using section 1 of our code.Then concatenate the generated features with the whole MP feature to run tsne analysis.
         
-- [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
-- [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
+    - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
+    - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
 
 
--For target group analysis WRT. some local distribution:
-
-    -   make sure your target and backgound materials are feed into the tsne toghether.
-        make sure the domain of the background materials is larger than the target materials to get a good map.
-
-        E.g. {ABC3 materials}<{ternary materials}
+- For target group analysis WRT. some local distribution:
+ Make sure your target and backgound materials are feed into the tsne toghether.
+ Make sure the domain of the background materials is larger than the target materials to get a good map.E.g. {ABC3 materials}<{ternary materials}
     
 
-## Dataset
+#### Dataset
 
 the whole MP feature of all 7 different descriptors is avaliable at 
 [global feature dataset](https://figshare.com/articles/dataset/7_generated_mp_dataset_136k_features/21980081)
