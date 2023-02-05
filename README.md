@@ -32,12 +32,12 @@ For global density and property analysis, The dataset avaliable in this resposit
 For target group analysis WRT. global distribution, there are 2 senerios. (figure 3)
 
 - your target group of materials is from MP dataset with known their MP ids.The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper
-
+    - [custom list of mpid](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
 
 - you have a group of materials not from MP dataset with their structure file as .cif. This requires you to generate the feature using section 1 of our code.Then concatenate the generated features with the whole MP feature to run tsne analysis.
         
     - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
-    - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
+    - [custom materials](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
 
 
 For target group analysis WRT. some local distribution:
