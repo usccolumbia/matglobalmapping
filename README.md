@@ -44,7 +44,7 @@ For target group analysis WRT. some local distribution:
 
 -Make sure your target and backgound materials are feed into the tsne toghether.Make sure the domain of the background materials is larger than the target materials to get a good map.E.g. {ABC3 materials}<{ternary materials}
 
-    -[custom graph](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
+    - [custom graph](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
     
 
 ### Dataset
