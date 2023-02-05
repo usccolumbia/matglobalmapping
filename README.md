@@ -7,7 +7,7 @@ Cite our work: <br>
 
 
 ### Introduction
-- Usage: There are 2 section of our code. You can create new feature from all the descriptors or reproduce our mapping results shown in paper.
+## Usage: There are 2 section of our code. You can create new feature from all the descriptors or reproduce our mapping results shown in paper.
 1. Generate all the descriptors feature vector for given group of materials structure infomation in format of .cif
 
     - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
@@ -38,7 +38,7 @@ For target group analysis WRT. global distribution, there are 2 senerios. (figur
         E.g. {ABC3 materials}<{ternary materials}
     
 
-- Dataset
+## Dataset
 
 the whole MP feature of all 7 different descriptors is avaliable at 
 [global feature dataset](https://figshare.com/articles/dataset/7_generated_mp_dataset_136k_features/21980081)
