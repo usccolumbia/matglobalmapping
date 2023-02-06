@@ -54,7 +54,7 @@ For target group analysis WRT. some local distribution:
     - [custom materials](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures) 
 
     
-
+### Sample global maps of inorganic materials
 
 
 
