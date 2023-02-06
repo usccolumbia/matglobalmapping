@@ -1,4 +1,4 @@
-# matglobalmapping
+# Matglobalmapping
 ### Global mapping of inorganic materials
 
 By Qinyang Li at <a href="http://mleg.cse.sc.edu" target="_blank">Machine Learning and Evolution Laboratory</a>, University of South Carolina.
@@ -17,6 +17,10 @@ pip install -r requirements.txt
 ```
 3. Install `pytorch` from [pytorch web](https://pytorch.org/get-started/previous-versions/) given your python & cuda version
 Since we used a pretrained model and only doing evaluation, the CPU version of the Pytorch is enough for the job.
+
+### Datasets
+
+Raw datasets, the whole MP feature datasets of all 7 different descriptors, and global map t-sne processed map datasets are avaliable at [dataset](dataset/) folder. 
 
 
 ### Usage
@@ -50,11 +54,7 @@ For target group analysis WRT. some local distribution:
     - [custom materials](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures) 
 
     
-
-### Dataset
-
-the whole MP feature of all 7 different descriptors is avaliable at 
-[global feature dataset](https://figshare.com/articles/dataset/7_generated_mp_dataset_136k_features/21980081)
+### Sample global maps of inorganic materials
 
 
 
