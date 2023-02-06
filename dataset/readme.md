@@ -17,7 +17,7 @@ Users can use these ids to download the cifs from Materials Project database usi
 With the given cifs, we calculate the structural and composition features with 7 different descriptors. 
 
 Due to the size of the dataset, the whole MP feature of all 7 different descriptors is avaliable at 
-https://figshare.com/account/articles/21980081
+https://figshare.com/articles/dataset/7_generated_mp_dataset_136k_features/21980081
 
 ## T-sne map datasets
 

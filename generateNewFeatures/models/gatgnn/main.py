@@ -44,7 +44,7 @@ def main():
     )
     parser.add_argument(
         "--run_mode",
-        default=None,
+        default="Analysis",
         type=str,
         help="run modes: Training, Predict, Repeat, CV, Hyperparameter, Ensemble, Analysis",
     )
@@ -56,7 +56,7 @@ def main():
     )
     parser.add_argument(
         "--model",
-        default="DEEP_GATGNN_demo",
+        default=None,
         type=str,
         help="CGCNN_demo, MPNN_demo, SchNet_demo, MEGNet_demo, GCN_net_demo, SOAP_demo, SM_demo",
     )

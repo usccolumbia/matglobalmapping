@@ -9,3 +9,10 @@ ray==1.4.0
 scikit-learn==1.0
 scipy==1.6.0
 tensorboardX==2.4
+
+
+pip install torch-scatter==2.0.7 -f        https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
+pip install torch-sparse==0.6.12 -f         https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
+pip install torch-cluster -f        https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
+pip install torch-spline-conv -f    https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
+pip install torch-geometric==1.7.2
