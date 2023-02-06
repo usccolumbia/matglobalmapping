@@ -16,7 +16,7 @@ pip install -r requirements.txt
 Since we used a pretrained model and only doing evaluation, the CPU version of the Pytorch is enough for the job.
 
 
-### Usage: 
+### Usage
 There are 2 section of our code. You can create new feature from all the descriptors or reproduce our mapping results shown in paper.
 1. Generate all the descriptors feature vector for given group of materials structure infomation in format of .cif
 
