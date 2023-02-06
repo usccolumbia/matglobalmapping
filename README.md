@@ -6,7 +6,8 @@ By Qinyang Li at <a href="http://mleg.cse.sc.edu" target="_blank">Machine Learni
 Cite our work: <br>
 
 
-![map](globalmap.png)
+<!-- ![map](globalmap.png) -->
+<img src="globalmap.png" width="60%">
 
 
 ### Installation
