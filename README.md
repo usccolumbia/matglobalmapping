@@ -1,4 +1,4 @@
-# matglobalmapping
+# Matglobalmapping
 ### Global mapping of inorganic materials
 
 By Qinyang Li at <a href="http://mleg.cse.sc.edu" target="_blank">Machine Learning and Evolution Laboratory</a>, University of South Carolina.
