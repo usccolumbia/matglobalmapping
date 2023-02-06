@@ -5,6 +5,10 @@ By Qinyang Li at <a href="http://mleg.cse.sc.edu" target="_blank">Machine Learni
 
 Cite our work: <br>
 
+
+![map](globalmap.png)
+
+
 ### Installation
 - Platform: Python 3.8, For better orginization and customization, the graph generation scripts is in jupyter notebooks
 1. Create your own conda or other enviroment.
