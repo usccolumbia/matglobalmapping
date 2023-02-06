@@ -51,9 +51,9 @@ For target group analysis WRT. some local distribution:
 
     
 
-### Dataset
+### Datasets
 
-the whole MP feature of all 7 different descriptors is avaliable at 
+Raw datasets, the whole MP feature datasets of all 7 different descriptors, and global map t-sne processed map datasets are avaliable at [dataset](dataset/) folder. 
 [global feature dataset](https://figshare.com/articles/dataset/7_generated_mp_dataset_136k_features/21980081)
 
 
