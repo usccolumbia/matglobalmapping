@@ -50,13 +50,13 @@ def main():
     )
     parser.add_argument(
         "--job_name",
-        default=None,
+        default="feature_extract",
         type=str,
         help="name of your job and output files/folders",
     )
     parser.add_argument(
         "--model",
-        default=None,
+        default="DEEP_GATGNN_demo",
         type=str,
         help="CGCNN_demo, MPNN_demo, SchNet_demo, MEGNet_demo, GCN_net_demo, SOAP_demo, SM_demo",
     )
@@ -68,7 +68,7 @@ def main():
     )
     parser.add_argument(
         "--model_path",
-        default=None,
+        default="./super_gatgnn_gc20_bulk_model.pth",
         type=str,
         help="path of the model .pth file",
     )
@@ -109,7 +109,7 @@ def main():
         type=str,
         help="Location of data containing structures (json or any other valid format) and accompanying files",
     )
-    parser.add_argument("--format", default=None, type=str, help="format of input data")
+    parser.add_argument("--format", default=".cif", type=str, help="format of input data")
     ###Training arguments
     parser.add_argument("--train_ratio", default=None, type=float, help="train ratio")
     parser.add_argument(

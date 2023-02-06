@@ -10,6 +10,9 @@ Cite our work: <br>
 1. Create your own conda or other enviroment.
 2. install basic packages
 ```
+conda create --name globalmapping python=3.8 
+conda activate globalmapping
+
 pip install -r requirements.txt
 ```
 3. Install `pytorch` from [pytorch web](https://pytorch.org/get-started/previous-versions/) given your python & cuda version

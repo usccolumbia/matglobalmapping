@@ -29,7 +29,7 @@ ele3  = pd.read_csv("../3ele_mp_props.csv")
 
 ele3mpid = ele3['mp_id']
 
-coord_0_feat    =  pd.read_csv('../../../aline_feat/Ccod0_aline_feat.csv')
+#coord_0_feat    =  pd.read_csv('../../../aline_feat/Ccod0_aline_feat.csv')
 
 
 
