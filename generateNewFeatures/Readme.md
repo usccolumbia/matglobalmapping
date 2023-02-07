@@ -11,7 +11,7 @@ the script can be executed by
 python run.py
 ```
 
-The output of each feature generating function is a dictnary. The keys are filenames or mpids (depend on your input), the values are generated feature vectors.
+The output of each feature generating function is a dictionary. The keys are filenames or mpids (depend on your input), the values are generated feature vectors.
 All generated feature is stored in the output folder in the format of .npy
 
 
