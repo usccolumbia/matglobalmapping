@@ -1,18 +1,23 @@
-ase==3.22.0
-dscribe==1.2.2
-hyperopt==0.2.5
-joblib==1.0.1
-matplotlib==3.4.2
-numpy==1.19.5
-pickle5==0.0.11
-ray==1.4.0
-scikit-learn==1.0
-scipy==1.6.0
-tensorboardX==2.4
+pip install --ignore-installed ase==3.22.0
+pip install --ignore-installed dscribe==1.2.2
+pip install --ignore-installed hyperopt==0.2.5
+pip install --ignore-installed joblib==1.0.1
+pip install --ignore-installed matplotlib==3.4.2
+pip install --ignore-installed numpy==1.19.5
+pip install --ignore-installed pickle5==0.0.11
+pip install --ignore-installed ray==[default]
+pip install --ignore-installed scikit-learn==1.0
+pip install --ignore-installed scipy==1.6.0
+pip install --ignore-installed tensorboardX==2.4
+
+ 
+pip install --ignore-installed torch-scatter==2.0.9 -f        https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
+pip install --ignore-installed torch-sparse==0.6.15 -f        https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
+pip install --ignore-installed torch-cluster==1.6.0 -f        https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
+pip install --ignore-installed torch-spline-conv==1.2.1 -f    https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
+pip install --ignore-installed torch-geometric==2.1.0
 
 
-pip install torch-scatter==2.0.7 -f        https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
-pip install torch-sparse==0.6.12 -f         https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
-pip install torch-cluster -f        https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
-pip install torch-spline-conv -f    https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
-pip install torch-geometric==1.7.2
+pip install --ignore-installed PyYAML
+pip install --ignore-installed numpy==1.23
+pip install --ignore-installed numba==0.56.4

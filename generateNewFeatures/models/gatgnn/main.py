@@ -56,7 +56,7 @@ def main():
     )
     parser.add_argument(
         "--model",
-        default=None,
+        default="DEEP_GATGNN_demo",
         type=str,
         help="CGCNN_demo, MPNN_demo, SchNet_demo, MEGNet_demo, GCN_net_demo, SOAP_demo, SM_demo",
     )
@@ -80,7 +80,7 @@ def main():
     )
     parser.add_argument(
         "--load_model",
-        default=None,
+        default="./super_gatgnn_gc20_bulk_model.pth",
         type=str,
         help="Load model",
     )
