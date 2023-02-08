@@ -21,7 +21,7 @@ conda activate globalmapping
 pip install -r requirements.txt
 ```
 3. Install `pytorch` from [pytorch website](https://pytorch.org/get-started/previous-versions/) given your python & cuda version
-Since we used a pretrained model and only doing evaluation, the CPU version of the Pytorch is enough for the job.
+Since we used a pretrained model and only do evaluation, the CPU version of the Pytorch is enough for the job.
 
 ### Datasets
 
@@ -29,7 +29,7 @@ Raw datasets, the whole MP feature datasets of all 7 different descriptors, and 
 
 
 ### Usage
-There are 2 section of our code. You can create new feature from all the descriptors or reproduce our mapping results shown in paper.
+There are 2 parts of our code. You can create new feature from all the descriptors or reproduce our mapping results shown in paper.
 1. Generate all the descriptors feature vector for given group of materials structure infomation in format of .cif
 
     - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
@@ -43,16 +43,16 @@ For global density and property analysis, The dataset avaliable in this resposit
 
 For target group analysis WRT. global distribution, there are 2 senerios. (figure 3)
 
-- your target group of materials is from MP dataset with known their MP ids.The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper
+- your target group of materials is from MP dataset with known MP ids.The dataset avaliable in this respository is enough to reproduce the global distribution map in our paper
     - [custom list of mpid](https://github.com/usccolumbia/matglobalmapping/tree/main/globalgraph/mpid_over_global)
 
-- you have a group of materials not from MP dataset with their structure file as .cif. This requires you to generate the feature using section 1 of our code.Then concatenate the generated features with the whole MP feature to run tsne analysis.
+- you have a group of materials not from MP dataset with their structure file as `.cif`. This requires you to generate the feature using part 1 of our code, then you eed to concatenate the generated features with the whole MP feature to run tsne analysis.
         
     - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
     - [custom materials](https://github.com/usccolumbia/matglobalmapping/tree/main/localsubsetgraph/newmaterials)
 
 
-For target group analysis WRT. some local distribution:
+For target group analysis WRT, there are some local distributions:
 
 - Make sure your target and backgound materials are feed into the tsne toghether.Make sure the domain of the background materials is larger than the target materials to get a good map.E.g. {ABC3 materials}<{ternary materials}
 
