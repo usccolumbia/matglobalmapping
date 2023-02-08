@@ -1,7 +1,6 @@
 import numpy as np
 import csv
 import pandas as pd
-
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import manifold
@@ -10,8 +9,9 @@ import os
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 import matplotlib as mpl
-
 import pickle
+import warnings
+warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 def visual(X):
     
@@ -33,13 +33,20 @@ def visual(X):
 
 
 
-ele3  = pd.read_csv("./3ele_mp_props.csv")
-ele3mpid = ele3['mp_id']
+ele3  = pd.read_csv("../background_mp_ids.csv")
 
+#allmp_dir = '../../../../motif_analysis/phase5/original_features/mp_comp_onehot.pickle'
+allmp_dir = '../../whole_MP_feat/mp_comp_onehot.pickle'
+
+
+
+
+
+ele3mpid = ele3['mp_id']
 ids =  ele3mpid.values.tolist()
-print(len(ids))
+#print(len(ids))
 objects = []
-with (open("../../original_features/mp_comp_onehot.pickle", "rb")) as openfile:
+with (open(allmp_dir, "rb")) as openfile:
     while True:
         try:
             objects.append(pickle.load(openfile))
@@ -49,7 +56,7 @@ newD = dict(zip(objects[0].keys(), [v[0].flatten() for v in objects[0].values()]
 res = {key: newD[key] for key in newD.keys()
        & ids}
 
-print(len(res))
+#print(len(res))
 
 df = pd.DataFrame.from_dict(res, orient='index')
 df['mp_id'] = df.index
@@ -71,5 +78,5 @@ print("data processed")
 #print(target_tsne)
 tsne = visual(target_tsne)
 print("tsne done")
-np.save("3ele_comp_tsne.npy", tsne)
-print("xrd_tsne.npy saved")
+np.save("../tsne/custom_comp_tsne.npy", tsne)
+print("tsne saved")

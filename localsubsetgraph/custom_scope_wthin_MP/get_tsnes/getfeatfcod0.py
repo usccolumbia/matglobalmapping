@@ -6,7 +6,8 @@ import os
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 import matplotlib as mpl
-
+import warnings
+warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 def visual(X):
     
@@ -25,14 +26,16 @@ def visual(X):
     return  X_norm
 
 
-ele3  = pd.read_csv("../3ele_mp_props.csv")
+ele3  = pd.read_csv("../background_mp_ids.csv")
+
+
+
+#coord_0_feat    =  pd.read_csv('../../../../motif_analysis/phase5/original_features/mp_frac_coord_0pad_feature.csv')
+coord_0_feat    =  pd.read_csv('../../whole_MP_feat/mp_frac_coord_0pad_feature.csv')
+
+
 
 ele3mpid = ele3['mp_id']
-
-coord_0_feat    =  pd.read_csv('../../../aline_feat/FcodV_aline_feat.csv')
-
-
-
 
 select_data= pd.merge(right=coord_0_feat, 
                     left=ele3mpid, 
@@ -45,7 +48,7 @@ cod0_string = cod0_raw_feat['feature']
 cod0_feat_list = []
 for line in cod0_string:
     line= str(line)[1:-1]
-    lis = list(line.split(" "))
+    lis = list(line.split(", "))
     #print(lis)
     lis = [i for i in lis if i]
     #floa = [float(x) for x in lis]
@@ -67,5 +70,5 @@ print("data processed")
 #print(target_tsne)
 tsne = visual(target_tsne)
 print("tsne done")
-np.save("3ele_FcodV_tsne.npy", tsne)
-print("codv_tsne.npy saved")
+np.save("../tsne/custom_fcod0_tsne.npy", tsne)
+print("tsne saved")

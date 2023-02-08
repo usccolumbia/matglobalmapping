@@ -6,6 +6,8 @@ import os
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 import matplotlib as mpl
+import warnings
+warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 
 def visual(X):
@@ -25,16 +27,16 @@ def visual(X):
     return  X_norm
 
 
-ele3  = pd.read_csv("./3ele_mp_props.csv")
+
+ele3  = pd.read_csv("../background_mp_ids.csv")
+
+#gatgnn_feat  =  pd.read_csv('../../../../motif_analysis/phase5/original_features/mp_GATGNN_feature_output.csv')
+gatgnn_feat =  pd.read_csv('../../whole_MP_feat/mp_GATGNN_feature_output.csv')
+
+
+
 
 ele3mpid = ele3['mp_id']
-
-
-#gatgnn_feat    =  pd.read_csv('../../original_features/mp_GATGNN_feature_output.csv')
-
-
-
-
 lst = list(range(0,64))
 col = ['mp_id']
 col = col+lst
@@ -54,5 +56,5 @@ print("data processed")
 #print(target_tsne)
 tsne = visual(target_tsne)
 print("tsne done")
-np.save("3ele_gatgnn_tsne.npy", tsne)
-print("cod0_tsne.npy saved")
+np.save("../tsne/custom_gatgnn_tsne.npy", tsne)
+print("tsne saved")

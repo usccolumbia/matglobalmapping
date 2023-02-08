@@ -6,7 +6,8 @@ import os
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 import matplotlib as mpl
-
+import warnings
+warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 def visual(X):
     
@@ -25,31 +26,22 @@ def visual(X):
     return  X_norm
 
 
-ele3  = pd.read_csv("./3ele_mp_props.csv")
-
+ele3  = pd.read_csv("../background_mp_ids.csv")
 ele3mpid = ele3['mp_id']
 
 
-pwdm_feat_raw    =  pd.read_csv('../../original_features/mp_distmatrix_feature.csv')
+#pwdm_dir  =  '../../../../motif_analysis/phase5/original_features/pwdm100.npy'
+pwdm_dir =  '../../whole_MP_feat/pwdm100.npy'
 
 
-pwdm_feat_index = pwdm_feat_raw['mp_id'].to_frame()
-pwdm_string = pwdm_feat_raw['feature'].fillna("[0.0 0.0 0.0]")
-pwdm_feat_list = []
-for line in pwdm_string:
-    line= str(line)[2:-1]
-    lis = list(line.split(" "))
-    #print(lis)
-    lis = [i for i in lis if i]
-    floa = [float(x) for x in lis]
-    pwdm_feat_list.append(floa)
-
-pwdm_feat=pd.DataFrame(pwdm_feat_list)
-
-pwdm_feat.insert(0, 'mp_id', pwdm_feat_index['mp_id'])
+pwdm100_raw      = np.load(pwdm_dir,allow_pickle=True).item()
+pwdm100_feat = pd.DataFrame.from_dict(pwdm100_raw, orient='index')
+pwdm100_feat.reset_index(inplace=True)
+pwdm100_feat = pwdm100_feat.rename(columns = {'index':'mp_id'})
 
 
-select_data= pd.merge(right=pwdm_feat, 
+
+select_data= pd.merge(right=pwdm100_feat, 
                     left=ele3mpid, 
                     how='left', 
                     right_on='mp_id', 
@@ -63,5 +55,5 @@ print("data processed")
 #print(target_tsne)
 tsne = visual(target_tsne)
 print("tsne done")
-np.save("3ele_pwdm_tsne.npy", tsne)
-print("pwdm_tsne.npy saved")
+np.save("../tsne/custom_pwdm_tsne.npy", tsne)
+print("tsne saved")
