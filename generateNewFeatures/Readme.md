@@ -1,4 +1,4 @@
-the input materials should be in the formate of .cif with the name for its mp id (Material projects)
+The input materials should be in the formate of .cif with the name for its mp id (Material projects)
 for generated new materials, them need individual unique names.
 they need to be put under the directory ./input_data/cif/ 
 

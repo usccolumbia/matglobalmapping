@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 3. Install `pytorch` from [pytorch website](https://pytorch.org/get-started/previous-versions/) given your python & cuda version
 Since we used a pretrained model and only do evaluation, the CPU version of the Pytorch is enough for the job.
-See detail about how to install the [Deeper GATGNN](https://github.com/usccolumbia/deeperGATGNN) environment
+See detail about how to install the [Deeper GATGNN](https://github.com/usccolumbia/deeperGATGNN) environment.
 
 ### Datasets
 
@@ -42,18 +42,19 @@ For global density and property analysis, The dataset avaliable in this resposit
     - [global property](https://github.com/usccolumbia/matglobalmapping/blob/main/graphsgenerate/allMP_global_property.ipynb) 
       
 
-For target group analysis WRT. global distribution, there are 2 senerios. (figure 3)
+For target group analysis WRT. global distribution(figure 3).
 
-- your target group of materials is from MP dataset with known MP ids.The dataset avaliable in this respository is enough to reproduce the global distribution map in our paper
+- your target group of materials is from MP dataset with known MP ids.The dataset avaliable in this respository is enough to reproduce the global distribution map in our paper.
     - [custom list of mpid](https://github.com/usccolumbia/matglobalmapping/tree/main/globalgraph/mpid_over_global)
 
-- you have a group of materials not from MP dataset with their structure file as `.cif`. This requires you to generate the feature using part 1 of our code, then you eed to concatenate the generated features with the whole MP feature to run tsne analysis.
+From here, every thing list below require download of original feature and put inside the 
+- you have a group of materials not from MP dataset with their structure file as `.cif`. This requires you to generate the feature using part 1 of our code, then you need to concatenate the generated features with the whole MP feature to run tsne analysis.
         
     - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
     - [custom materials](https://github.com/usccolumbia/matglobalmapping/tree/main/localsubsetgraph/newmaterials)
 
 
-For target group analysis WRT, there are some local distributions:
+For target group analysis WRT. custom there are some local distributions:
 
 - Make sure your target and backgound materials are feed into the tsne toghether.Make sure the domain of the background materials is larger than the target materials to get a good map.E.g. {ABC3 materials}<{ternary materials}
 
