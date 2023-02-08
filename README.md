@@ -22,6 +22,7 @@ pip install -r requirements.txt
 ```
 3. Install `pytorch` from [pytorch website](https://pytorch.org/get-started/previous-versions/) given your python & cuda version
 Since we used a pretrained model and only do evaluation, the CPU version of the Pytorch is enough for the job.
+See detail about how to install the [Deeper GATGNN]{https://github.com/usccolumbia/deeperGATGNN} environment
 
 ### Datasets
 
