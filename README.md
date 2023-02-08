@@ -18,7 +18,7 @@ Cite our work: Qinyang Li, Rongzhi Dong, Nihang Fu, Lai Wei, Sadman Sadeed Omeeï
 conda create --name globalmapping python=3.8 
 conda activate globalmapping
 
-pip install -r requirements.txt
+conda install --file requirements.txt
 ```
 3. Install `pytorch` from [pytorch website](https://pytorch.org/get-started/previous-versions/) given your python & cuda version
 Since we used a pretrained model and only do evaluation, the CPU version of the Pytorch is enough for the job.
@@ -47,18 +47,13 @@ For target group analysis WRT. global distribution(figure 3).
 - your target group of materials is from MP dataset with known MP ids.The dataset avaliable in this respository is enough to reproduce the global distribution map in our paper.
     - [custom list of mpid](https://github.com/usccolumbia/matglobalmapping/tree/main/globalgraph/mpid_over_global)
 
-From here, every thing list below require download of original feature and put inside the 
-- you have a group of materials not from MP dataset with their structure file as `.cif`. This requires you to generate the feature using part 1 of our code, then you need to concatenate the generated features with the whole MP feature to run tsne analysis.
-        
-    - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
-    - [custom materials](https://github.com/usccolumbia/matglobalmapping/tree/main/localsubsetgraph/newmaterials)
-
+From here, everything listed below require download of original feature.
 
 For target group analysis WRT. custom there are some local distributions:
 
-- Make sure your target and backgound materials are feed into the tsne toghether.Make sure the domain of the background materials is larger than the target materials to get a good map.E.g. {ABC3 materials}<{ternary materials}
+- Make sure your target and backgound materials are feed into the tsne toghetherï¼ˆnormally target materials should belong to a subset of background materials).Make sure the domain of the background materials is larger than the target materials to get a good map.E.g. {ABC3 materials}<{ternary materials}
 
-    - [custom scope](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures) 
+    - [custom scope](https://github.com/usccolumbia/matglobalmapping/tree/main/localsubsetgraph/custom_scope_wthin_MP) 
 
     
 ### Sample global maps of inorganic materials
