@@ -1,7 +1,8 @@
 Under this directory, the Figure 7 in our paper can be reproduced.
 Here we shown the example of a local 805 that we mentioned in our paper distributing over the backgound of ABC3 prototypes. 
 
-For T-sne generation
+For T-sne generation, make sure the raw datasets is downloaded and stored in ../whole_MP_feat. Then run the following command with your conda environment active.
+
 
 ```
 python get_tsne.py
