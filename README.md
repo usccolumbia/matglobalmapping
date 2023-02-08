@@ -47,9 +47,8 @@ For target group analysis WRT. global distribution(figure 3).
 - your target group of materials is from MP dataset with known MP ids.The dataset avaliable in this respository is enough to reproduce the global distribution map in our paper.
     - [custom list of mpid](https://github.com/usccolumbia/matglobalmapping/tree/main/globalgraph/mpid_over_global)
 
-From here, everything listed below require download of original feature.
 
-For target group analysis WRT. custom there are some local distributions:
+For target group analysis WRT. custom there are some local distributions(figure 7). This requires download of original feature:
 
 - Make sure your target and backgound materials are feed into the tsne toghether（normally target materials should belong to a subset of background materials).Make sure the domain of the background materials is larger than the target materials to get a good map.E.g. {ABC3 materials}<{ternary materials}
 
