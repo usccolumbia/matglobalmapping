@@ -62,6 +62,9 @@ For target group analysis WRT, there are some local distributions:
     
 ### Sample global maps of inorganic materials
 
+The figure displayed in our paper is avaliable at
+    - [figures](https://github.com/usccolumbia/matglobalmapping/tree/main/figures_inpaper)
+
 
 
 
