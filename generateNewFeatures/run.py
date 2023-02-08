@@ -12,7 +12,7 @@ from models.topo_feat import get_topo_feat
 from models.xrd_feat import get_xrd_feat
 
 inputdir = "./input_data/cif"
-onlyfiles = [join(inputdir, f) for f in listdir(inputdir) if isfile(join(inputdir, f))]
+onlyfiles = [join(inputdir, f) for f in listdir(inputdir) if isfile(join(inputdir, f)) & f.endswith('cif')]
 
 cartcord,factcord = gen_coord_feat(onlyfiles)
 

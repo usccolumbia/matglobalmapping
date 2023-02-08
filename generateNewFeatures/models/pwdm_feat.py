@@ -4,7 +4,6 @@ from pymatgen.core.periodic_table import ElementBase, Element
 import pymatgen.core as core
 from os.path import isfile, join
 import pandas as pd
-from gemmi import cif
 import numpy as np
 from scipy.spatial.distance import squareform,pdist
 from csv import writer

@@ -18,7 +18,7 @@ Cite our work: Qinyang Li, Rongzhi Dong, Nihang Fu, Lai Wei, Sadman Sadeed Omeeï
 conda create --name globalmapping python=3.8 
 conda activate globalmapping
 
-conda install --file requirements.txt
+pip install -r requirement.txt
 ```
 3. Install `pytorch` from [pytorch website](https://pytorch.org/get-started/previous-versions/) given your python & cuda version
 Since we used a pretrained model and only do evaluation, the CPU version of the Pytorch is enough for the job.
