@@ -3,7 +3,7 @@
          'model': 'DEEP_GATGNN_demo',
          'model_path': './super_gatgnn_gc20_bulk_model.pth',
          'reprocess': 'False',
-         'seed': 86237,
+         'seed': 790253,
          'write_output': 'True'},
  'Models': {'act': 'softplus',
             'batch_norm': 'True',
