@@ -10,14 +10,76 @@ pip install --ignore-installed scikit-learn==1.0
 pip install --ignore-installed scipy==1.6.0
 pip install --ignore-installed tensorboardX==2.4
 
- 
-pip install --ignore-installed torch-scatter==2.0.9 -f        https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
-pip install --ignore-installed torch-sparse==0.6.15 -f        https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
-pip install --ignore-installed torch-cluster==1.6.0 -f        https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
-pip install --ignore-installed torch-spline-conv==1.2.1 -f    https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
-pip install --ignore-installed torch-geometric==2.1.0
+export TORCH=1.12.1
+export CUDA=cu113 
+pip install torch-scatter==2.0.9  -f       https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-sparse==0.6.15 -f        https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-cluster==1.6.0  -f       https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-spline-conv==1.2.1  -f        https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-geometric==2.1.0.post1
 
 
 pip install --ignore-installed PyYAML
 pip install --ignore-installed numpy==1.23
 pip install --ignore-installed numba==0.56.4
+
+
+export TORCH=1.9.0
+pip install --ignore-installed torch-scatter     -f        https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
+pip install --ignore-installed torch-sparse      -f        https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
+pip install --ignore-installed torch-cluster     -f        https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
+pip install --ignore-installed torch-spline-conv -f        https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
+pip install --ignore-installed torch-geometric
+
+
+conda create --name gat python=3.7 
+conda activate gat
+
+conda deactivate
+conda env remove -n gat
+
+
+pip install -r reqi.txt
+
+
+
+export TORCH=1.12.1
+export CUDA=cu113 
+pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-sparse -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-geometric
+
+
+export TORCH=1.9.1
+export CUDA=cu113
+pip install --ignore-installed torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install --ignore-installed torch-sparse -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install --ignore-installed torch-cluster -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install --ignore-installed torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install --ignore-installed torch-geometric==1.7.2
+
+
+
+
+export TORCH=1.10.1
+export CUDA=cu111
+pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-sparse -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-geometric
+
+export TORCH=1.9.1
+export CUDA=cu111
+pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-sparse -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-geometric
+
+
+pip install PyYAML
+pip install ray[tune]
+pip install ase
