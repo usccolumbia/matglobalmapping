@@ -34,7 +34,7 @@ We use the PyTorch Framework for our code. Please install the following packages
     pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
     pip install torch-geometric==2.1.0.post1
 	```
-    Replace the ${TORCH} with your PyTorch version and ${CUDA} with your cuda version without the '.' and a prefix 'cu'. For example, if your PyTorch version is 1.12.1 and your CUDA version is 11.3, then replace ${TORCH} with 1.12.1 and ${CUDA} with cu113.
+    Replace the ${TORCH}$ with your PyTorch version and ${CUDA}$ with your cuda version without the '.' and a prefix 'cu'. For example, if your PyTorch version is 1.12.1 and your CUDA version is 11.3, then replace ${TORCH}$ with 1.12.1 and ${CUDA}$ with cu113.
 
 3. **Some other packages**: Use the following commands to install some pachages:
     ```bash
