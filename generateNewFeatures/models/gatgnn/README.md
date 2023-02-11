@@ -23,18 +23,18 @@ We use the PyTorch Framework for our code. Please install the following packages
 
 1. **Pytorch**: Tested on Pytorch 1.9.0. Use the following command to install (or you can also install the latest stable version using the command from the PyTorch website):
 	```bash
-	pip install torch==1.9.0 torchvision==0.10.0
+	pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
 	```
 
-2. **Pytorch Geometric (PyG)**: Tested on torch-geometric 1.7.2. First, check your PyTorch and CUDA version. Then use the following commands to install:
+2. **Pytorch Geometric (PyG)**: Tested on torch-geometric 2.1.0.post1. First, check your PyTorch and CUDA version. Then use the following commands to install:
     ```bash
     pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
     pip install torch-sparse -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
     pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
     pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
-    pip install torch-geometric
+    pip install torch-geometric==2.1.0.post1
 	```
-    Replace the ${TORCH} with your PyTorch version and ${CUDA} with your cuda version without the '.' and a prefix 'cu'. For example, if your PyTorch version is 1.9.0 and your CUDA version is 10.2, then replace ${TORCH} with 1.9.0 and ${CUDA} with cu102.
+    Replace the ${TORCH} with your PyTorch version and ${CUDA} with your cuda version without the '.' and a prefix 'cu'. For example, if your PyTorch version is 1.12.1 and your CUDA version is 11.3, then replace ${TORCH} with 1.12.1 and ${CUDA} with cu113.
 
 3. **Some other packages**: Use the following commands to install some pachages:
     ```bash
@@ -48,6 +48,8 @@ We use the PyTorch Framework for our code. Please install the following packages
     pip install ray[default]
     pip install hyperopt
     pip install tensorboardX
+    python3.8 -m pip install colorama
+    pip install protobuf==3.20.*
     ```
 
 4. **Pymatgen**: Tested on pymatgen 2021.3.3. We recommend to use this specific version. Use the following command to install: 
