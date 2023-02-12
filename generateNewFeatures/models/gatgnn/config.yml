@@ -124,7 +124,7 @@ Models:
         dim2: 150
         pre_fc_count: 1
         gc_count: 20
-        post_fc_count: 0
+        post_fc_count: 1
         pool: "global_add_pool"
         pool_order: "early"
         batch_norm: "True"

@@ -16,7 +16,6 @@ import ray
 from ray import tune
 
 from matdeeplearn import models, process, training
-
 ################################################################################
 #
 ################################################################################
@@ -38,7 +37,7 @@ def main():
     ###Job arguments
     parser.add_argument(
         "--config_path",
-        default="config.yml",
+        default="./config.yml",
         type=str,
         help="Location of config file (default: config.json)",
     )
@@ -68,7 +67,7 @@ def main():
     )
     parser.add_argument(
         "--model_path",
-        default="./super_gatgnn_gc20_bulk_model.pth",
+        default="none",
         type=str,
         help="path of the model .pth file",
     )
@@ -80,7 +79,7 @@ def main():
     )
     parser.add_argument(
         "--load_model",
-        default="./super_gatgnn_gc20_bulk_model.pth",
+        default="none",
         type=str,
         help="Load model",
     )

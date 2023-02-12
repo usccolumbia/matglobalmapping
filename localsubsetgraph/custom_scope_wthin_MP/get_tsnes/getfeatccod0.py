@@ -73,3 +73,10 @@ tsne = visual(target_tsne)
 print("tsne done")
 np.save("../tsne/custom_ccod0_tsne.npy", tsne)
 print("tsne saved")
+
+
+
+#feat_xy = pd.DataFrame(tsne.tolist())
+#feat_xy.columns =['x','y']
+#feat_xy['mp_id'] = cod0_feat_index
+#feat_xy.to_csv("../custom_ccod0_xy.csv",index=False)

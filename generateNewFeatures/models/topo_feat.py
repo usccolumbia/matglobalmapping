@@ -13,7 +13,7 @@ def cif2vaspUsingASE(input_dir):
     ASE seems to do an excellent job with reading cif's.
     It will write out the coordinates in cartesian coordinates.
     """
-    onlyfiles = [join(input_dir, f) for f in listdir(input_dir) if isfile(join(input_dir, f))]
+    onlyfiles = [join(input_dir, f) for f in listdir(input_dir) if isfile(join(input_dir, f))&f.endswith(".cif")]
     outpath = '/'.join(input_dir.split('/')[:-1])+'/poscar/'
     if not os.path.exists(outpath):
         os.makedirs(outpath)
