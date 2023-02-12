@@ -13,16 +13,46 @@ Cite our work: Qinyang Li, Rongzhi Dong, Nihang Fu, Lai Wei, Sadman Sadeed Omeeï
 ### Installation
 - Platform: Python 3.8, For better orginization and customization, the graph generation scripts is in jupyter notebooks
 1. Create your own conda or other enviroment.
-2. install basic packages
+
 ```
 conda create --name globalmapping python=3.8 
 conda activate globalmapping
-
-pip install -r requirement.txt
 ```
-3. Install `pytorch` from [pytorch website](https://pytorch.org/get-started/previous-versions/) given your python & cuda version
+2. Install `pytorch` from [pytorch website](https://pytorch.org/get-started/previous-versions/) given your python & cuda version
 Since we used a pretrained model and only do evaluation, the CPU version of the Pytorch is enough for the job.
 See detail about how to install the [Deeper GATGNN](https://github.com/usccolumbia/deeperGATGNN) environment.
+This is a tested cpu version installation:
+
+```
+pip install torch==1.12.1+cpu torchvision==0.13.1+cpu torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cpu
+
+export TORCH=1.12.1
+export CUDA=cpu 
+pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-sparse -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-geometric==2.1.0.post1
+```
+3. Install basic packages
+```
+pip install numpy
+pip install scipy
+pip install matplotlib
+pip install pickle5
+pip install joblib
+pip install describe
+pip install scikit-learn
+pip install ray[default]
+pip install hyperopt
+pip install tensorboardX
+python3.8 -m pip install colorama
+pip install protobuf==3.20.*
+pip install pymatgen==v2021.3.3
+pip install ase
+pip install ripser
+```
+
 
 ### Datasets
 
