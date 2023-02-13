@@ -1,7 +1,7 @@
 # Matglobalmapping
 ### Global mapping of inorganic materials
 
-By Qinyang Li at <a href="http://mleg.cse.sc.edu" target="_blank">Machine Learning and Evolution Laboratory</a>, University of South Carolina.
+By Qinyang Li, Rongzhi Dong, Nihang Fu, et al. at <a href="http://mleg.cse.sc.edu" target="_blank">Machine Learning and Evolution Laboratory</a>, University of South Carolina.
 
 Cite our work: Qinyang Li, Rongzhi Dong, Nihang Fu, Lai Wei, Sadman Sadeed Omee，Jianjun Hu*. Global mapping of structures and properties of crystal materials. 2023 Arxiv.xxx<br>
 
