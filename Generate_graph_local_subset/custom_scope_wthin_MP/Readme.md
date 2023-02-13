@@ -16,5 +16,5 @@ Visualizing graph
 
 if you have a group of materials not from MP dataset with their structure file as `.cif`. This requires you to generate the feature using part 1 of our code, then you can modify the get_tsne scripts to generate map for your group
         
-    - [generate features](../../Generate_descriptor_features/)
+- [generate features](../../Generate_descriptor_features/)
     
