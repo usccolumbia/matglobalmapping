@@ -15,5 +15,5 @@ Visualizing graph
 
 - if you have a group of materials not from MP dataset with their structure file as `.cif`. This requires you to generate the feature using part 1 of our code, then you can modify the get_tsne scripts to generate map for your group
         
-    - [generate features](https://github.com/usccolumbia/matglobalmapping/tree/main/generateNewFeatures)
-    - [custom materials](https://github.com/usccolumbia/matglobalmapping/tree/main/localsubsetgraph/newmaterials)
+    - [generate features](generateNewFeatures/)
+    - [custom scope](custom_scope_wthin_MP/)
