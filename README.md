@@ -68,14 +68,14 @@ There are 2 parts of our code. You can create new feature from all the descripto
 2. Reproduce the mapping graph 
 For global density and property analysis, The dataset avaliable in this respository is is enough to reproduce the global distribution map in our paper (figure 2,4,5,6).Due to the size of the generated feature the dataset avaliable in this respository is the result from T-SNE. It only contains the xy coordniates for each map.
 
-    - [global density](Generate_graph_ global_MP/allMP_global_density.ipynb) 
-    - [global property](Generate_graph_ global_MP/allMP_global_property.ipynb) 
+    - [global density](/Generate_graph_ global_MP/allMP_global_density.ipynb) 
+    - [global property](/Generate_graph_ global_MP/allMP_global_property.ipynb) 
       
 
 For target group analysis WRT. global distribution(figure 3).
 
 - your target group of materials is from MP dataset with known MP ids.The dataset avaliable in this respository is enough to reproduce the global distribution map in our paper.
-    - [custom list of mpid](Generate_graph_ global_MP/mpid_over_global)
+    - [custom list of mpid](/Generate_graph_ global_MP/mpid_over_global)
 
 
 For target group analysis WRT. custom there are some local distributions(figure 7). This requires download of original feature:
